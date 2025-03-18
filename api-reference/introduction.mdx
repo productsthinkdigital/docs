@@ -1,6 +1,6 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Introduction"
+description: "Example section for showcasing API endpoints"
 ---
 
 <Note>
@@ -12,11 +12,7 @@ description: 'Example section for showcasing API endpoints'
 
 There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
+<Card title="Plant Store Endpoints" icon="leaf" href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json">
   View the OpenAPI specification file
 </Card>
 
@@ -31,3 +27,25 @@ All API endpoints are authenticated using Bearer tokens and picked up from the s
   }
 ]
 ```
+
+## Built for scale
+
+Relay is designed for high performance at any scale. Relay keeps management of data-fetching easy, whether your app has tens, hundreds, or thousands of components. And thanks to Relay’s incremental compiler, it keeps your iteration speed fast even as your app grows.
+
+## Keeps iteration quick
+
+Relay is data-fetching turned **declarative**. Components declare their data dependencies, without worrying about how to fetch them. Relay guarantees that the data each component needs is fetched and available. This keeps components decoupled and promotes reuse.
+
+With Relay, components and their data dependencies can be quickly modified without modifying other parts of the system. That means you won't accidentally break other components as you refactor or make changes to your app.
+
+## Automatic optimizations
+
+Relay's compiler aggregates and optimizes the data requirements for your entire app, so that they can be efficiently fetched in a single GraphQL request.
+
+Relay handles the heavy lifting to ensure the data declared by your components is fetched in the most efficient way. For example, by deduplicating identical fields, and precomputing information used at runtime, among other optimizations.
+
+## Data consistency
+
+Relay automatically keeps all of your components up to date when data that affects them changes, and efficiently updates them only when strictly necessary. This means no unnecessary re-renders.
+
+Relay also supports executing GraphQL Mutations, optionally with optimistic updates, and updates to local data, while ensuring that visible data on the screen is always kept up to date.
