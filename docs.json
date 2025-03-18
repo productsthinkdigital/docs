@@ -11,14 +11,15 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "About Media Lab",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Bắt đầu",
             "pages": [
               "introduction",
               "quickstart",
-              "development"
+              "development",
+              "Aboutus",
             ]
           },
           {
